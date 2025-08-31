@@ -130,11 +130,15 @@ body {
 @media (min-width: 768px) {
   .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;  /* Apila en columna */
+    justify-content: center; /* Centra verticalmente */
+    align-items: center;     /* Centra horizontalmente */
+    text-align: center;
+    gap: 10px; /* espacio entre h1 y h3 */
   }
 
   .about, .projects {
     width: 48%;
   }
 }
+
